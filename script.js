@@ -10,8 +10,8 @@ function debounce(func, delay) {
 }
 
 // Click Handler
-const btn = document.querySelector('#btn');
 const clickHandler = () => console.log('Button Clicked');
 
 // EventListener
+const btn = document.querySelector('#btn');
 btn.addEventListener('click', debounce(clickHandler, 1000));
